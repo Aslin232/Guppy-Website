@@ -9,25 +9,46 @@ export default function Home() {
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedFilter, setSelectedFilter] = useState("All");
 
-  const filters = ["All", "Dragon", "Albino", "Koi","Dumbo ear"];
+  const filters = ["All", "Dragon", "Albino", "Koi", "Dumbo ear"];
+
+  // When typing in search → reset filter to All
+  const handleSearch = (term) => {
+    setSearchTerm(term);
+    if (term !== "") {
+      setSelectedFilter("All");
+    }
+  };
+
+  // When clicking a filter → clear search
+  const handleFilterClick = (filter) => {
+    setSelectedFilter(filter);
+    setSearchTerm("");
+  };
 
   const filteredGuppies = guppies.filter((g) => {
-    const matchFilter = selectedFilter === "All" || g.type === selectedFilter;
-    const matchSearch =
-      g.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
-      searchTerm === "";
+    const filterLower = selectedFilter.toLowerCase();
+    const typeLower = g.type.toLowerCase();
+    const nameLower = g.name.toLowerCase();
+    const searchLower = searchTerm.toLowerCase();
+
+    const matchFilter =
+      filterLower === "all" || typeLower.includes(filterLower);
+
+    const matchSearch = searchLower === "" || nameLower.includes(searchLower);
+
     return matchFilter && matchSearch;
   });
 
   return (
     <div>
-      <Header onSearch={setSearchTerm} />
-      
+      <Header onSearch={handleSearch} />
+
       <FilterBar
         filters={filters}
         selectedFilter={selectedFilter}
-        setSelectedFilter={setSelectedFilter}
+        setSelectedFilter={handleFilterClick}
       />
+
       <div className="guppy-grid">
         {filteredGuppies.length > 0
           ? filteredGuppies.map((g) => <GuppyCard key={g.id} guppy={g} />)
@@ -36,6 +57,7 @@ export default function Home() {
               .slice(0, 3)
               .map((g) => <GuppyCard key={g.id} guppy={g} />)}
       </div>
+
       <Footer />
     </div>
   );
