@@ -11,7 +11,6 @@ export default function Home() {
 
   const filters = ["All", "Dragon", "Albino", "Koi", "Dumbo ear"];
 
-  // When typing in search → reset filter to All
   const handleSearch = (term) => {
     setSearchTerm(term);
     if (term !== "") {
@@ -19,7 +18,7 @@ export default function Home() {
     }
   };
 
-  // When clicking a filter → clear search
+
   const handleFilterClick = (filter) => {
     setSelectedFilter(filter);
     setSearchTerm("");
