@@ -9,10 +9,11 @@ const guppies = [
       "/images/bluedragon/bluedragon2.jpg",
     ],
     videos: ["/images/bluedragon/bluevideo.mp4", "/images/bluedragon/blud.mp4"],
-    description: "Beautiful Blue Dragon ,Quality is good .Minimum quantity of 2 pair required to place order.",
+    description:
+      "Beautiful Blue Dragon ,Quality is good .Minimum quantity of 2 pair required to place order.",
     price: "₹150",
     delivery: "Delivery available in kannyakumari",
-    stock: true,
+    stock: false,
   },
   {
     id: 2,
@@ -49,7 +50,7 @@ const guppies = [
     name: "Platinum Koi Dumbo Ear",
     type: "Koi",
     price: "₹200",
-    img: "/images/platinumkoi/pltkoi.jpeg",
+    img: "/images/platinumkoi/plats.jpg",
     images: [
       "/images/platinumkoi/pltkoi.jpeg",
       "/images/platinumkoi/pltkoi2.jpeg",
@@ -182,8 +183,8 @@ const guppies = [
   {
     id: 12,
     name: "Red Lace",
-    type: "Albino",
-    price: "₹200",
+    type: "",
+    price: "₹120",
     img: "/images/redlace/redl.jpeg",
     images: [
       "/images/redlace/redlace3.jpeg",
@@ -191,21 +192,57 @@ const guppies = [
       "/images/redlace/redlace.jpeg",
     ],
     videos: ["/images/redlace/redlace.mp4", "/images/redlace/redlace2.mp4"],
-    description: "A bright red dragon guppy. Keep in 20-25°C water.",
+    description: "A bright Red Lace with premium quality.Mininum need 2 pair to place order.You will get 2 male and 4 females in 2 pair pack.",
     delivery: "out of stock",
     stock: false,
   },
   {
     id: 13,
-    name: "Electric blue",
-    type: "Albino",
-    price: "₹50",
-    img: "/images/elcblue/eblue.jpeg",
-    images: ["/images/elcblue/eblu2.jpeg"],
-    videos: ["/images/elcblue/darkel.mp4", "/images/elcblue/darkel2.mp4"],
-    description: "The fish quality is low thats why the price is less.Minimum 3 pair is required to place order.",
-    delivery: "delivery available in kannyakumari",
-    stock: true,
+    name: "Moscow Blue",
+    type: "",
+    price: "₹200",
+    img: "/images/moscow/moscow.jpeg",
+    images: [
+      "/images/moscow/moscow.jpeg",
+      "/images/moscow/moscow2.jpeg",
+      "/images/moscow/moscow2.jpeg",
+    ],
+
+    description: "A bright red dragon guppy. Keep in 20-25°C water.",
+    delivery: "out of stock",
+    stock: false,
+  },
+  {
+    id: 14,
+    name: "Moscow Blue",
+    type: "",
+    price: "₹200",
+    img: "/images/gold/gold.jpeg",
+    images: [
+      "/images/gold/gold.jpeg",
+      "/images/gold/fullgold.jpeg",
+      "/images/gold/gold.jpeg",
+    ],
+
+    description: "A bright red dragon guppy. Keep in 20-25°C water.",
+    delivery: "out of stock",
+    stock: false,
+  },
+  {
+    id: 15,
+    name: "Metal Red Rose",
+    type: "",
+    price: "₹200",
+    img: "/images/metal/metal.jpeg",
+    images: [
+      "/images/metal/metal.jpeg",
+      "/images/metal/metal.jpeg",
+      "/images/metal/metal.jpeg",
+    ],
+
+    description: "A bright red dragon guppy. Keep in 20-25°C water.",
+    delivery: "out of stock",
+    stock: false,
   },
 ];
 

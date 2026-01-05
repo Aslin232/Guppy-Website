@@ -117,7 +117,7 @@ export default function GuppyDetail() {
       </div>
 
       <div className="des">
-        <p>{guppy.description}</p>
+        <p style={{lineHeight:1.5}}>{guppy.description}</p>
         <p>Price: {guppy.price}</p>
         <p>Delivery: {guppy.delivery}</p>
 

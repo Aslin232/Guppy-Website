@@ -23,8 +23,9 @@ body {
   border: 1px solid black;
   color: white;
 }
-.foot{
+.foot {
   margin-top: 130px;
+  background: rgb(27, 27, 27);
 }
 
 .filter-bar {
@@ -61,9 +62,8 @@ body {
   justify-content: center;
   gap: 1rem;
   padding: 1rem;
-
 }
-.out-stock{
+.out-stock {
   color: red;
 }
 
@@ -142,7 +142,7 @@ body {
 }
 
 footer {
-  background: gray;
+
   color: white;
   text-align: center;
   padding: 1rem;
@@ -192,9 +192,22 @@ footer {
 .des {
   margin-top: 70px;
 }
+@media (min-width: 400px) and (max-width: 499px) {
+  .guppy-card {
+    width: 280px;
+    height: 350px;
+  }
+  .search {
+    padding: 10px 18px 10px 10px;
+    height: 10px;
+    background: gainsboro;
+
+    font-size: 14px;
+  }
+}
 @media (max-width: 560px) {
   .guppy-card {
-    width: 350px;
+    width: 290px;
     height: 350px;
   }
   .filter-bar {
