@@ -9,9 +9,9 @@ export default function Home() {
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedFilter, setSelectedFilter] = useState("All");
 
-  const filters = ["All", "Dragon", "Albino", "Koi", "Dumbo ear"];
 
-  // When typing in search → reset filter to All
+  const filters = ["All", "Stock", "Dragon", "Albino", "Koi", "Dumbo ear"];
+
   const handleSearch = (term) => {
     setSearchTerm(term);
     if (term !== "") {
@@ -19,7 +19,6 @@ export default function Home() {
     }
   };
 
-  // When clicking a filter → clear search
   const handleFilterClick = (filter) => {
     setSelectedFilter(filter);
     setSearchTerm("");
@@ -31,12 +30,20 @@ export default function Home() {
     const nameLower = g.name.toLowerCase();
     const searchLower = searchTerm.toLowerCase();
 
+ 
+    const matchStock =
+      filterLower === "stock" ? g.stock === true : true;
+
     const matchFilter =
-      filterLower === "all" || typeLower.includes(filterLower);
+      filterLower === "all" ||
+      filterLower === "stock" ||
+      typeLower.includes(filterLower);
 
-    const matchSearch = searchLower === "" || nameLower.includes(searchLower);
 
-    return matchFilter && matchSearch;
+    const matchSearch =
+      searchLower === "" || nameLower.includes(searchLower);
+
+    return matchStock && matchFilter && matchSearch;
   });
 
   return (
@@ -50,12 +57,15 @@ export default function Home() {
       />
 
       <div className="guppy-grid">
-        {filteredGuppies.length > 0
-          ? filteredGuppies.map((g) => <GuppyCard key={g.id} guppy={g} />)
-          : guppies
-              .sort(() => 0.5 - Math.random())
-              .slice(0, 3)
-              .map((g) => <GuppyCard key={g.id} guppy={g} />)}
+        {filteredGuppies.length > 0 ? (
+          filteredGuppies.map((g) => (
+            <GuppyCard key={g.id} guppy={g} />
+          ))
+        ) : (
+          <p style={{ textAlign: "center", marginTop: "20px" ,color:'white'}}>
+            No fish available right now 🐟
+          </p>
+        )}
       </div>
 
       <Footer />

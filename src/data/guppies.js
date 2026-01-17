@@ -85,16 +85,17 @@ const guppies = [
     id: 6,
     name: "Albino Platinum White",
     type: "Albino",
-    price: "₹200",
+    price: "₹120",
     img: "/images/platinumwhite/platwhite2.jpeg",
     images: [
       "/images/platinumwhite/platwhite.jpeg",
       "/images/platinumwhite/platwhite2.jpeg",
     ],
 
-    description: "A bright red dragon guppy. Keep in 20-25°C water.",
-    delivery: "out of stock",
-    stock: false,
+    description: "A nice quality Platinum White Albino type guppy.",
+    delivery: "Available inside Kanniya kumari",
+     requirements:'You need Minimum 2 pair to place order',
+    stock: true,
   },
   {
     id: 7,
@@ -132,7 +133,7 @@ const guppies = [
     id: 9,
     name: "Red Texudo Dumbo Ear",
     type: "Dumbo ear",
-    price: "₹200",
+    price: "₹180",
     img: "/images/redtex/redtex4.jpeg",
     images: [
       "/images/redtex/reddumbo.jpg",
@@ -141,9 +142,9 @@ const guppies = [
     ],
     videos: ["/images/redtex/reddumbo.mp4", "/images/redtex/reddumbo2.mp4"],
 
-    description: "A bright red dragon guppy. Keep in 20-25°C water.",
-    delivery: "out of stock",
-    stock: false,
+    description: "A bright red texudo guppy easy to maintain but sensitive to wateer tempratures.",
+    delivery: "Delivery available in Kanniyakumari",
+    stock: true,
   },
   {
     id: 10,
@@ -161,7 +162,7 @@ const guppies = [
     id: 11,
     name: "Topaz Blue",
     type: "Albino",
-    price: "₹200",
+    price: "₹120",
     img: "/images/topazblue/top.jpeg",
     images: [
       "/images/topazblue/topaz2.jpeg",
@@ -176,15 +177,17 @@ const guppies = [
       "/images/topazblue/topaz3.mp4",
       "/images/topazblue/topaz4.mp4",
     ],
-    description: "A bright red dragon guppy. Keep in 20-25°C water.",
-    delivery: "out of stock",
-    stock: false,
+    description: "Topaz blue it shines blue when a light hit on it.Sensitive to water temperatures.",
+    delivery: "Delivery available in kanniyaKumari",
+    requirements:'You need Minimum 2 pair to place order',
+    stock: true,
+ 
   },
   {
     id: 12,
     name: "Red Lace",
     type: "",
-    price: "₹120",
+    price: "₹90",
     img: "/images/redlace/redl.jpeg",
     images: [
       "/images/redlace/redlace3.jpeg",
@@ -192,9 +195,11 @@ const guppies = [
       "/images/redlace/redlace.jpeg",
     ],
     videos: ["/images/redlace/redlace.mp4", "/images/redlace/redlace2.mp4"],
-    description: "A bright Red Lace with premium quality.Mininum need 2 pair to place order.You will get 2 male and 4 females in 2 pair pack.",
-    delivery: "out of stock",
-    stock: false,
+    description:
+      "A bright Red Lace with premium quality.You will get 2 male and 4 females in 2 pair pack.It is not that sensitive and best for begineers",
+    delivery: "Available all over kanniya kumari",
+     requirements:'You need Minimum 2 pair to place order',
+    stock: true,
   },
   {
     id: 13,
@@ -214,7 +219,7 @@ const guppies = [
   },
   {
     id: 14,
-    name: "Moscow Blue",
+    name: "Full Gold",
     type: "",
     price: "₹200",
     img: "/images/gold/gold.jpeg",

@@ -6,6 +6,7 @@ export default function GuppyDetail() {
   const { id } = useParams();
   const guppy = guppies.find((g) => g.id === parseInt(id));
 
+
   const slides = useMemo(() => {
     return guppy
       ? [
@@ -117,9 +118,10 @@ export default function GuppyDetail() {
       </div>
 
       <div className="des">
-        <p style={{lineHeight:1.5}}>{guppy.description}</p>
+        <p style={{ lineHeight: 1.5 }}>{guppy.description}</p>
         <p>Price: {guppy.price}</p>
         <p>Delivery: {guppy.delivery}</p>
+        <p>{guppy.requirements}</p>
 
         {isOut && (
           <p style={{ color: "red", fontWeight: "bold" }}>Out of Stock</p>
