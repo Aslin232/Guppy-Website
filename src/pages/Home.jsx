@@ -7,7 +7,7 @@ import Footer from "../components/Footer";
 
 export default function Home() {
   const [searchTerm, setSearchTerm] = useState("");
-  const [selectedFilter, setSelectedFilter] = useState("All");
+  const [selectedFilter, setSelectedFilter] = useState("Stock");
 
 
   const filters = ["All", "Stock", "Dragon", "Albino", "Koi", "Dumbo ear"];
