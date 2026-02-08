@@ -1,7 +1,7 @@
 const guppies = [
   {
     id: 1,
-    name: "Blue Dragon",
+    name: "Purple Berry Dragon",
     type: "Dragon",
     img: "/images/bluedragon/g.jpg",
     images: [
@@ -85,7 +85,7 @@ const guppies = [
     id: 6,
     name: "Albino Platinum White",
     type: "Albino",
-    price: "₹100",
+    price: "₹80",
     img: "/images/platinumwhite/platwhite2.jpeg",
     images: [
       "/images/platinumwhite/platwhite.jpeg",
@@ -93,8 +93,10 @@ const guppies = [
     ],
 
     description: "A nice quality Platinum White Albino type guppy.",
-    delivery: "Delivery available all over Tamil Nadu",
-    requirements: "You need Minimum 2 pair to place order",
+    delivery:
+      "Delivery available all over Tamil Nadu.you will be charge ₹80 for delivery.",
+    requirements:
+      "You need Minimum 2 pair to place order.₹80 will be charged only once, even if you select more than one fish or other type fish No additional ₹80 for the second or third fish.",
     stock: true,
   },
   {
@@ -133,7 +135,7 @@ const guppies = [
     id: 9,
     name: "Red Texudo Dumbo Ear",
     type: "Dumbo ear",
-    price: "₹180",
+    price: "₹100",
     img: "/images/redtex/redtex4.jpeg",
     images: [
       "/images/redtex/reddumbo.jpg",
@@ -142,8 +144,13 @@ const guppies = [
     ],
     videos: ["/images/redtex/reddumbo.mp4", "/images/redtex/reddumbo2.mp4"],
 
-    description: "A bright red texudo guppy easy to maintain but sensitive to wateer tempratures.",
-    delivery: "Delivery available in Kanniyakumari",
+    description:
+      "A bright red texudo guppy easy to maintain but sensitive to water tempratures.",
+    delivery:
+      "Delivery available all over Tamil Nadu.You will be charged ₹80 for delivery",
+    requirements:
+      "₹80 will be charged only once, even if you select more than one fish or other type fish No additional ₹80 for the second or third fish.",
+
     stock: true,
   },
   {
@@ -162,7 +169,7 @@ const guppies = [
     id: 11,
     name: "Topaz Blue",
     type: "Albino",
-    price: "₹120",
+    price: "₹80",
     img: "/images/topazblue/top.jpeg",
     images: [
       "/images/topazblue/topaz2.jpeg",
@@ -177,17 +184,19 @@ const guppies = [
       "/images/topazblue/topaz3.mp4",
       "/images/topazblue/topaz4.mp4",
     ],
-    description: "Topaz blue it shines blue when a light hit on it.Sensitive to water temperatures.",
-    delivery: "Delivery available in kanniyaKumari",
-    requirements:'You need Minimum 2 pair to place order',
+    description:
+      "Topaz blue it shines blue when a light hit on it.Sensitive to water temperatures.",
+    delivery:
+      "Delivery available all over Tamil Nadu.You will be charged ₹80 for delivery",
+    requirements:
+      "You need Minimum 2 pair to place order.₹80 will be charged only once, even if you select more than one fish or other type fish No additional ₹90 for the second or third fish.",
     stock: true,
- 
   },
   {
     id: 12,
     name: "Red Lace",
     type: "",
-    price: "₹90",
+    price: "₹60",
     img: "/images/redlace/redl.jpeg",
     images: [
       "/images/redlace/redlace3.jpeg",
@@ -197,8 +206,10 @@ const guppies = [
     videos: ["/images/redlace/redlace.mp4", "/images/redlace/redlace2.mp4"],
     description:
       "A bright Red Lace with premium quality.You will get 2 male and 4 females in 2 pair pack.It is not that sensitive and best for begineers",
-    delivery: "Available all over kanniya kumari",
-     requirements:'You need Minimum 2 pair to place order',
+    delivery:
+      "Delivery available all over Tamil Nadu.You will be charged ₹80 for delivery",
+    requirements:
+      "You need Minimum 2 pair to place order.₹80 will be charged only once, even if you select more than one fish or other type fish No additional ₹90 for the second or third fish.",
     stock: true,
   },
   {
@@ -249,7 +260,6 @@ const guppies = [
     delivery: "out of stock",
     stock: false,
   },
-  
   {
     id: 16,
     name: "Albino Red lace",
