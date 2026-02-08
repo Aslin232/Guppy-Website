@@ -198,6 +198,15 @@ footer {
     max-width: 250px;
     max-height: 330px;
   }
+  .logo-img {
+    max-width: 45px;
+    max-height: 45px;
+  }
+ .search{
+  position: relative;
+  left: -35px;
+  width: 100px;
+ }
 
   .carousel {
     max-width: 310px;
@@ -221,11 +230,9 @@ footer {
     gap: 3px;
   }
   .filter-bar .active {
-    max-width: 60px;
+    width: 60px;
   }
-  .rty {
-    width: 59px;
-  }
+
   .filter-bar button {
     padding: 0.3rem 0.6rem;
     text-align: center;
