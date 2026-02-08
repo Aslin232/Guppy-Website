@@ -85,7 +85,7 @@ const guppies = [
     id: 6,
     name: "Albino Platinum White",
     type: "Albino",
-    price: "₹120",
+    price: "₹100",
     img: "/images/platinumwhite/platwhite2.jpeg",
     images: [
       "/images/platinumwhite/platwhite.jpeg",
@@ -93,8 +93,8 @@ const guppies = [
     ],
 
     description: "A nice quality Platinum White Albino type guppy.",
-    delivery: "Available inside Kanniya kumari",
-     requirements:'You need Minimum 2 pair to place order',
+    delivery: "Delivery available all over Tamil Nadu",
+    requirements: "You need Minimum 2 pair to place order",
     stock: true,
   },
   {
