@@ -249,6 +249,35 @@ const guppies = [
     delivery: "out of stock",
     stock: false,
   },
+  
+  {
+    id: 16,
+    name: "Albino Red lace",
+    type: "",
+    price: "₹200",
+    img: "/images/albredl/albredl1.jpeg",
+    images: [
+      "/images/albredl/albredl1.jpeg",
+      "/images/albredl/albredl1.jpeg",
+      "/images/albredl/albredl1.jpeg",
+    ],
+
+    description: "A bright red dragon guppy. Keep in 20-25°C water.",
+    delivery: "out of stock",
+    stock: false,
+  },
+  {
+    id: 17,
+    name: "Non Cap Koi",
+    type: "",
+    price: "₹200",
+    img: "/images/noncap/plats.jpg",
+    images: ["/images/noncap/platsjpg", "/images/noncap/platsjpg"],
+
+    description: "A bright red dragon guppy. Keep in 20-25°C water.",
+    delivery: "out of stock",
+    stock: false,
+  },
 ];
 
 export default guppies;
