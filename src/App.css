@@ -50,6 +50,7 @@ body {
 
 .filter-bar .active {
   background: #0077b6;
+  max-width:100px;
   color: white;
 }
 
