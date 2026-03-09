@@ -1,7 +1,7 @@
 const guppies = [
   {
     id: 1,
-    name: "Purple Berry Dragon",
+    name: "Purple berry Dragon",
     type: "Dragon",
     img: "/images/bluedragon/g.jpg",
     images: [
@@ -10,20 +10,20 @@ const guppies = [
     ],
     videos: ["/images/bluedragon/bluevideo.mp4", "/images/bluedragon/blud.mp4"],
     description:
-      "Beautiful Blue Dragon ,Quality is good .Minimum quantity of 2 pair required to place order.",
-    price: "₹150",
+      "Beautiful Blue Dragon ,Quality is good .The price mentioned is for 1 pair",
+    price: "₹120",
     delivery: "Delivery available in kannyakumari",
     stock: false,
   },
   {
     id: 2,
-    name: "Red Dragon",
+    name: "Albino Red Lace",
     type: "Dragon",
     price: "₹200",
-    img: "/images/reddragon/reddragon.jpeg",
+    img: "/images/alb/alb.jpeg",
     images: [
-      "/images/reddragon/reddragon.jpeg",
-      "/images/reddragon/reddragon2.jpeg",
+      "/images/alb/alb.jpeg",
+      "/images/alb/alb.jpeg",
     ],
 
     description: "A bright red dragon guppy. Keep in 20-25°C water.",
@@ -34,22 +34,23 @@ const guppies = [
     id: 3,
     name: "Platinum Redtail Dumbo Ear",
     type: "Dumbo ear",
-    price: "₹150",
+    price: "₹100",
     img: "/images/dumboear/dumbo2.jpeg",
     images: [
       "/images/dumboear/dumboear.jpeg",
       "/images/dumboear/dumboear2.jpeg",
     ],
     videos: ["/images/dumboear/dumboear.mp4", "/images/dumboear/dumboear2.mp4"],
-    description: "A bright red dragon guppy. Keep in 20-25°C water.",
-    delivery: "out of stock",
-    stock: false,
+    description: "A bright red dragon guppy. Keep in 20-25°C water.Price mentioned is for 1 pair guppy",
+    delivery: "shipping available all over Tamilnadu",
+
+    stock: true,
   },
   {
     id: 4,
     name: "Platinum Koi Dumbo Ear",
     type: "Koi",
-    price: "₹200",
+    price: "₹100",
     img: "/images/platinumkoi/plats.jpg",
     images: [
       "/images/platinumkoi/pltkoi.jpeg",
@@ -61,9 +62,9 @@ const guppies = [
       "/images/platinumkoi/platinumkoi3.mp4",
     ],
 
-    description: "A bright red dragon guppy. Keep in 20-25°C water.",
-    delivery: "out of stock",
-    stock: false,
+    description: "A bright red dragon guppy. Keep in 20-25°C water.price mentioned is for 1 pair",
+    delivery: "Available All over Tamilnadu",
+    stock: true,
   },
   {
     id: 5,
@@ -85,7 +86,7 @@ const guppies = [
     id: 6,
     name: "Albino Platinum White",
     type: "Albino",
-    price: "₹80",
+    price: "₹90",
     img: "/images/platinumwhite/platwhite2.jpeg",
     images: [
       "/images/platinumwhite/platwhite.jpeg",
@@ -93,17 +94,15 @@ const guppies = [
     ],
 
     description: "A nice quality Platinum White Albino type guppy.",
-    delivery:
-      "Delivery available all over Tamil Nadu.you will be charge ₹80 for delivery.",
-    requirements:
-      "You need Minimum 2 pair to place order.₹80 will be charged only once, even if you select more than one fish or other type fish No additional ₹80 for the second or third fish.",
+    delivery: "Available all over Tamilnadu",
+    requirements: "You need Minimum 2 pair to place order",
     stock: true,
   },
   {
     id: 7,
     name: "Tuxedo Koi",
     type: "Koi",
-    price: "₹200",
+    price: "₹100",
     img: "/images/koi/texudo7.jpeg",
     images: [
       "/images/koi/texkoi2.jpeg",
@@ -111,15 +110,15 @@ const guppies = [
       "/images/koi/texkoi1.jpeg",
     ],
     videos: ["/images/koi/koi.mp4", "/images/koi/koi3.mp4"],
-    description: "A bright red dragon guppy. Keep in 20-25°C water.",
-    delivery: "out of stock",
-    stock: false,
+    description: "A bright red dragon guppy. Keep in 20-25°C water.Price mentioned is for 1 pair guppy",
+    delivery: "Delivery available all over Tamilnadu",
+    stock: true,
   },
   {
     id: 8,
     name: "Chilli mosaic dumbo ear",
     type: "dumboear",
-    price: "₹200",
+    price: "₹80",
     img: "/images/chilli/chilli4.jpeg",
     images: [
       "/images/chilli/chilli1.jpeg",
@@ -127,9 +126,9 @@ const guppies = [
       "/images/chilli/chilli3.jpeg",
     ],
     videos: ["/images/chilli/chilli4.mp4", "/images/chilli/chilli3.mp4"],
-    description: "A bright red dragon guppy. Keep in 20-25°C water.",
-    delivery: "out of stock",
-    stock: false,
+    description: "A bright red dragon guppy. Keep in 20-25°C water.price mentioned is for 1 pair guppy",
+    delivery: "Shipping available all over Tamilnadu",
+    stock: true,
   },
   {
     id: 9,
@@ -145,12 +144,9 @@ const guppies = [
     videos: ["/images/redtex/reddumbo.mp4", "/images/redtex/reddumbo2.mp4"],
 
     description:
-      "A bright red texudo guppy easy to maintain but sensitive to water tempratures.",
-    delivery:
-      "Delivery available all over Tamil Nadu.You will be charged ₹80 for delivery",
-    requirements:
-      "₹80 will be charged only once, even if you select more than one fish or other type fish No additional ₹80 for the second or third fish.",
-
+      "A bright red texudo guppy easy to maintain but sensitive to wateer tempratures.Price mentioned is for 1 pair",
+    delivery: "Delivery available in Kanniyakumari",
+     requirements: "only 1 pair available",
     stock: true,
   },
   {
@@ -169,7 +165,7 @@ const guppies = [
     id: 11,
     name: "Topaz Blue",
     type: "Albino",
-    price: "₹80",
+    price: "₹120",
     img: "/images/topazblue/top.jpeg",
     images: [
       "/images/topazblue/topaz2.jpeg",
@@ -186,17 +182,15 @@ const guppies = [
     ],
     description:
       "Topaz blue it shines blue when a light hit on it.Sensitive to water temperatures.",
-    delivery:
-      "Delivery available all over Tamil Nadu.You will be charged ₹80 for delivery",
-    requirements:
-      "You need Minimum 2 pair to place order.₹80 will be charged only once, even if you select more than one fish or other type fish No additional ₹90 for the second or third fish.",
+    delivery: "Delivery available in kanniyaKumari",
+    requirements: "You need Minimum 2 pair to place order",
     stock: true,
   },
   {
     id: 12,
     name: "Red Lace",
     type: "",
-    price: "₹60",
+    price: "₹90",
     img: "/images/redlace/redl.jpeg",
     images: [
       "/images/redlace/redlace3.jpeg",
@@ -206,10 +200,8 @@ const guppies = [
     videos: ["/images/redlace/redlace.mp4", "/images/redlace/redlace2.mp4"],
     description:
       "A bright Red Lace with premium quality.You will get 2 male and 4 females in 2 pair pack.It is not that sensitive and best for begineers",
-    delivery:
-      "Delivery available all over Tamil Nadu.You will be charged ₹80 for delivery",
-    requirements:
-      "You need Minimum 2 pair to place order.₹80 will be charged only once, even if you select more than one fish or other type fish No additional ₹90 for the second or third fish.",
+    delivery: "Available all over kanniya kumari",
+    requirements: "You need Minimum 2 pair to place order",
     stock: true,
   },
   {
@@ -255,34 +247,6 @@ const guppies = [
       "/images/metal/metal.jpeg",
       "/images/metal/metal.jpeg",
     ],
-
-    description: "A bright red dragon guppy. Keep in 20-25°C water.",
-    delivery: "out of stock",
-    stock: false,
-  },
-  {
-    id: 16,
-    name: "Albino Red lace",
-    type: "",
-    price: "₹200",
-    img: "/images/albredl/albredl1.jpeg",
-    images: [
-      "/images/albredl/albredl1.jpeg",
-      "/images/albredl/albredl1.jpeg",
-      "/images/albredl/albredl1.jpeg",
-    ],
-
-    description: "A bright red dragon guppy. Keep in 20-25°C water.",
-    delivery: "out of stock",
-    stock: false,
-  },
-  {
-    id: 17,
-    name: "Non Cap Koi",
-    type: "",
-    price: "₹200",
-    img: "/images/noncap/plats.jpg",
-    images: ["/images/noncap/platsjpg", "/images/noncap/platsjpg"],
 
     description: "A bright red dragon guppy. Keep in 20-25°C water.",
     delivery: "out of stock",
