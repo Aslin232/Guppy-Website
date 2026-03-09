@@ -1,11 +1,11 @@
 import React, { useState, useEffect, useRef, useMemo } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
+import { motion } from "framer-motion"; // Added for smooth UI animations
 import guppies from "../data/guppies";
 
 export default function GuppyDetail() {
   const { id } = useParams();
   const guppy = guppies.find((g) => g.id === parseInt(id));
-
 
   const slides = useMemo(() => {
     return guppy
@@ -18,13 +18,12 @@ export default function GuppyDetail() {
 
   const [current, setCurrent] = useState(0);
   const videoRef = useRef(null);
-
   const touchStartX = useRef(null);
   const touchEndX = useRef(null);
 
+  // Auto-slide logic for images
   useEffect(() => {
-    if (slides.length === 0) return;
-    if (slides[current].type === "video") return;
+    if (slides.length === 0 || slides[current].type === "video") return;
 
     const firstVideoIndex = slides.findIndex((s) => s.type === "video");
     const lastAutoIndex =
@@ -33,75 +32,82 @@ export default function GuppyDetail() {
     if (current >= lastAutoIndex) return;
 
     const interval = setInterval(() => {
-      setCurrent((prev) => {
-        if (prev >= lastAutoIndex) return prev;
-        return prev + 1;
-      });
-    }, 2000);
+      setCurrent((prev) => (prev >= lastAutoIndex ? prev : prev + 1));
+    }, 3000); // Increased to 3s for better readability
 
     return () => clearInterval(interval);
   }, [current, slides]);
 
-  useEffect(() => {
-    const video = videoRef.current;
-    if (!video) return;
-
-    const onEnd = () => {
-      console.log("Video finished:", slides[current].src);
-    };
-
-    video.addEventListener("ended", onEnd);
-    return () => video.removeEventListener("ended", onEnd);
-  }, [current, slides]);
-
+  // Touch handlers for swipe navigation
   const handleTouchStart = (e) => {
     touchStartX.current = e.touches[0].clientX;
   };
-
   const handleTouchMove = (e) => {
     touchEndX.current = e.touches[0].clientX;
   };
-
   const handleTouchEnd = () => {
     if (!touchStartX.current || !touchEndX.current) return;
-
     const distance = touchStartX.current - touchEndX.current;
-
-    if (distance > 50) {
-      setCurrent((prev) => (prev + 1) % slides.length);
-    } else if (distance < -50) {
+    if (distance > 50) setCurrent((prev) => (prev + 1) % slides.length);
+    else if (distance < -50)
       setCurrent((prev) => (prev - 1 + slides.length) % slides.length);
-    }
-
     touchStartX.current = null;
     touchEndX.current = null;
   };
 
-  if (!guppy) return <p>Guppy not found</p>;
+  if (!guppy)
+    return (
+      <p style={{ color: "white", textAlign: "center", marginTop: "50px" }}>
+        Guppy not found
+      </p>
+    );
 
   const isOut = guppy.stock === false;
 
   return (
-    <div className="guppy-detail">
-      <h2>{guppy.name}</h2>
+    <motion.div
+      className="guppy-detail"
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5 }}
+    >
+      {/* Back Button */}
+      <Link
+        to="/"
+        style={{
+          color: "var(--accent-blue)",
+          textDecoration: "none",
+          display: "inline-block",
+          marginBottom: "20px",
+        }}
+      >
+        ← Back to Gallery
+      </Link>
 
+      {/* Media Carousel */}
       <div
         className="carousel"
         onTouchStart={handleTouchStart}
         onTouchMove={handleTouchMove}
         onTouchEnd={handleTouchEnd}
       >
-        <div key={slides[current].src}>
-          {slides[current].type === "image" ? (
-            <img className="carousel-media" src={slides[current].src} alt="" />
+        <div key={slides[current]?.src}>
+          {slides[current]?.type === "image" ? (
+            <img
+              className="carousel-media"
+              src={slides[current].src}
+              alt={guppy.name}
+            />
           ) : (
             <video
               className="carousel-media"
               ref={videoRef}
-              key={slides[current].src}
+              key={slides[current]?.src}
               controls
+              autoPlay
+              muted
             >
-              <source src={slides[current].src} type="video/mp4" />
+              <source src={slides[current]?.src} type="video/mp4" />
             </video>
           )}
         </div>
@@ -117,46 +123,103 @@ export default function GuppyDetail() {
         </div>
       </div>
 
-      <div className="des">
-        <p style={{ lineHeight: 1.5 }}>{guppy.description}</p>
-        <p>Price: {guppy.price}</p>
-        <p>Delivery: {guppy.delivery}</p>
-        <p>{guppy.requirements}</p>
+      {/* Content Section */}
+      <motion.div
+        className="des"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 0.3 }}
+      >
+        <h1 style={{ fontSize: "2.5rem", margin: "20px 0 10px" }}>
+          {guppy.name}
+        </h1>
 
-        {isOut && (
-          <p style={{ color: "red", fontWeight: "bold" }}>Out of Stock</p>
-        )}
-      </div>
+        <div
+          style={{
+            display: "flex",
+            gap: "10px",
+            alignItems: "center",
+            marginBottom: "20px",
+          }}
+        >
+          <span
+            style={{
+              fontSize: "1.5rem",
+              fontWeight: "bold",
+              color: "var(--accent-blue)",
+            }}
+          >
+            {guppy.price}
+          </span>
+          {isOut && <span className="badge-out">Out of Stock</span>}
+        </div>
 
+        <p
+          style={{
+            lineHeight: 1.8,
+            color: "var(--text-dim)",
+            fontSize: "1.1rem",
+          }}
+        >
+          {guppy.description}
+        </p>
+
+        <div
+          style={{
+            background: "rgba(255,255,255,0.05)",
+            padding: "20px",
+            borderRadius: "15px",
+            marginTop: "20px",
+          }}
+        >
+          <p style={{ margin: "5px 0" }}>
+            <strong>🚚 Delivery:</strong> {guppy.delivery}
+          </p>
+          {guppy.requirements && (
+            <p style={{ margin: "5px 0" }}>
+              <strong>📝 Note:</strong> {guppy.requirements}
+            </p>
+          )}
+        </div>
+      </motion.div>
+
+      {/* Action Buttons */}
       <div className="buttons">
-        {isOut ? (
-          <button style={{ background: "gray", opacity: 0.6 }}>
-            WhatsApp (Out of Stock)
-          </button>
+        {!isOut ? (
+          <>
+            <a
+              href={`https://wa.me/918438725637?text=Hello,%20I%20want%20to%20buy%20${guppy.name}`}
+              className="btn-whatsapp"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Order via WhatsApp
+            </a>
+            <a
+              href="https://www.instagram.com/aquavibeguppies/"
+              className="btn-insta"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Message on Instagram
+            </a>
+          </>
         ) : (
-          <a
-            href={`https://wa.me/918438725637?text=Hello,%20I%20want%20to%20buy%20${guppy.name}`}
-            target="_blank"
-            rel="noopener noreferrer"
+          <button
+            disabled
+            style={{
+              background: "#333",
+              color: "#777",
+              cursor: "not-allowed",
+              width: "100%",
+              borderRadius: "12px",
+              padding: "15px",
+            }}
           >
-            Message on WhatsApp
-          </a>
-        )}
-
-        {isOut ? (
-          <button style={{ background: "gray", opacity: 0.6 }}>
-            Instagram (Out of Stock)
+            Currently Unavailable
           </button>
-        ) : (
-          <a
-            href="https://www.instagram.com/aquavibeguppies/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Message on Instagram
-          </a>
         )}
       </div>
-    </div>
+    </motion.div>
   );
 }
