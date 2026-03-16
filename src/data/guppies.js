@@ -21,10 +21,7 @@ const guppies = [
     type: "Dragon",
     price: "₹200",
     img: "/images/alb/alb.jpeg",
-    images: [
-      "/images/alb/alb.jpeg",
-      "/images/alb/alb.jpeg",
-    ],
+    images: ["/images/alb/alb.jpeg", "/images/alb/alb.jpeg"],
 
     description: "A bright red dragon guppy. Keep in 20-25°C water.",
     delivery: "out of stock",
@@ -41,7 +38,8 @@ const guppies = [
       "/images/dumboear/dumboear2.jpeg",
     ],
     videos: ["/images/dumboear/dumboear.mp4", "/images/dumboear/dumboear2.mp4"],
-    description: "A bright red dragon guppy. Keep in 20-25°C water.Price mentioned is for 1 pair guppy",
+    description:
+      "A bright red dragon guppy. Keep in 20-25°C water.Price mentioned is for 1 pair guppy",
     delivery: "shipping available all over Tamilnadu",
 
     stock: true,
@@ -62,20 +60,20 @@ const guppies = [
       "/images/platinumkoi/platinumkoi3.mp4",
     ],
 
-    description: "A bright red dragon guppy. Keep in 20-25°C water.price mentioned is for 1 pair",
+    description:
+      "A bright red dragon guppy. Keep in 20-25°C water.price mentioned is for 1 pair",
     delivery: "Available All over Tamilnadu",
     stock: true,
   },
   {
     id: 5,
-    name: "Dark Knight Dragon",
+    name: "Red Dragon",
     type: "Dragon",
     price: "₹200",
-    img: "/images/darkknight/knight2.jpeg",
-    images: ["/images/darkknight/dark.jpeg", "/images/darkknight/dark2.jpeg"],
-    videos: [
-      "/images/darkknight/darkknight2.mp4",
-      "/images/darkknight/darkknight3.mp4",
+    img: "/images/reddragon/reddragon.jpeg",
+    images: [
+      "/images/reddragon/reddragon.jpeg",
+      "/images/reddragon/reddragon2.jpeg",
     ],
 
     description: "A bright red dragon guppy. Keep in 20-25°C water.",
@@ -110,7 +108,8 @@ const guppies = [
       "/images/koi/texkoi1.jpeg",
     ],
     videos: ["/images/koi/koi.mp4", "/images/koi/koi3.mp4"],
-    description: "A bright red dragon guppy. Keep in 20-25°C water.Price mentioned is for 1 pair guppy",
+    description:
+      "A bright red dragon guppy. Keep in 20-25°C water.Price mentioned is for 1 pair guppy",
     delivery: "Delivery available all over Tamilnadu",
     stock: true,
   },
@@ -126,7 +125,8 @@ const guppies = [
       "/images/chilli/chilli3.jpeg",
     ],
     videos: ["/images/chilli/chilli4.mp4", "/images/chilli/chilli3.mp4"],
-    description: "A bright red dragon guppy. Keep in 20-25°C water.price mentioned is for 1 pair guppy",
+    description:
+      "A bright red dragon guppy. Keep in 20-25°C water.price mentioned is for 1 pair guppy",
     delivery: "Shipping available all over Tamilnadu",
     stock: true,
   },
@@ -146,7 +146,7 @@ const guppies = [
     description:
       "A bright red texudo guppy easy to maintain but sensitive to wateer tempratures.Price mentioned is for 1 pair",
     delivery: "Delivery available in Kanniyakumari",
-     requirements: "only 1 pair available",
+    requirements: "only 1 pair available",
     stock: true,
   },
   {
@@ -246,6 +246,111 @@ const guppies = [
       "/images/metal/metal.jpeg",
       "/images/metal/metal.jpeg",
       "/images/metal/metal.jpeg",
+    ],
+
+    description: "A bright red dragon guppy. Keep in 20-25°C water.",
+    delivery: "out of stock",
+    stock: false,
+  },
+  {
+    id: 16,
+    name: "Albino red ear koi",
+    type: "",
+    price: "₹200",
+    img: "/images/redearkoi/redearkoi.jpeg",
+    images: [
+      "/images/redearkoi/redearkoi.jpeg",
+      "/images/redearkoi/redearkoi2.jpeg",
+    ],
+
+    description: "A bright red dragon guppy. Keep in 20-25°C water.",
+    delivery: "out of stock",
+    stock: false,
+  },
+  {
+    id: 17,
+    name: "platinum koi dumbo ear c fin ribbon",
+    type: "",
+    price: "₹200",
+    img: "/images/pltcfin/pltrib.jpeg",
+    images: ["/images/pltcfin/pltrib.jpeg", "/images/pltcfin/pltrib.jpeg"],
+
+    description: "A bright red dragon guppy. Keep in 20-25°C water.",
+    delivery: "out of stock",
+    stock: false,
+  },
+  {
+    id: 18,
+    name: "platinum blue dragon dumbo ear",
+    type: "",
+    price: "₹200",
+    img: "/images/pltblued/pltdb.jpeg",
+    images: ["/images/pltblued/pltdb.jpeg", "/images/pltblued/pltdb.jpeg"],
+
+    description: "A bright red dragon guppy. Keep in 20-25°C water.",
+    delivery: "out of stock",
+    stock: false,
+  },
+  {
+    id: 19,
+    name: "Ballon koi",
+    type: "",
+    price: "₹200",
+    img: "/images/balkoi/bal.jpeg",
+    images: ["/images/balkoi/bal.jpeg", "/images/balkoi/bal.jpeg"],
+
+    description: "A bright red dragon guppy. Keep in 20-25°C water.",
+    delivery: "out of stock",
+    stock: false,
+  },
+  {
+    id: 20,
+    name: "wild koi super short body",
+    type: "",
+    price: "₹200",
+    img: "/images/wild/wild.jpeg",
+    images: ["/images/wild/wild.jpeg", "/images/wild/wild.jpeg"],
+
+    description: "A bright red dragon guppy. Keep in 20-25°C water.",
+    delivery: "out of stock",
+    stock: false,
+  },
+  {
+    id: 21,
+    name: "Blue panda c fin ribbon",
+    type: "",
+    price: "₹200",
+    img: "/images/bluepri/bluepan.jpeg",
+    images: ["/images/bluepri/bluepan.jpeg", "/images/bluepri/bluepan.jpeg"],
+
+    description: "A bright red dragon guppy. Keep in 20-25°C water.",
+    delivery: "out of stock",
+    stock: false,
+  },
+  {
+    id: 22,
+    name: "Albino Full red purple ear",
+    type: "",
+    price: "₹200",
+    img: "/images/albpurpleear/albredp.jpeg",
+    images: [
+      "/images/albpurpleear/albredp.jpeg",
+      "/images/albpurpleear/albredp.jpeg",
+    ],
+
+    description: "A bright red dragon guppy. Keep in 20-25°C water.",
+    delivery: "out of stock",
+    stock: false,
+  },
+  {
+    id: 23,
+    name: "Platinum red tail full moon",
+    type: "",
+    price: "₹200",
+    img: "/images/pltfullm/pltfullm.jpeg",
+    images: [
+      "/images/pltfullm/pltfullm.jpeg",
+      "/images/pltfullm/pltfullm.jpeg",
     ],
 
     description: "A bright red dragon guppy. Keep in 20-25°C water.",
