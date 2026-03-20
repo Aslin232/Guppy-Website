@@ -65,23 +65,9 @@ const guppies = [
     delivery: "Available All over Tamilnadu",
     stock: true,
   },
+
   {
     id: 5,
-    name: "Red Dragon",
-    type: "Dragon",
-    price: "₹200",
-    img: "/images/reddragon/reddragon.jpeg",
-    images: [
-      "/images/reddragon/reddragon.jpeg",
-      "/images/reddragon/reddragon2.jpeg",
-    ],
-
-    description: "A bright red dragon guppy. Keep in 20-25°C water.",
-    delivery: "out of stock",
-    stock: false,
-  },
-  {
-    id: 6,
     name: "Albino Platinum White",
     type: "Albino",
     price: "₹90",
@@ -97,7 +83,7 @@ const guppies = [
     stock: true,
   },
   {
-    id: 7,
+    id: 6,
     name: "Tuxedo Koi",
     type: "Koi",
     price: "₹100",
@@ -113,25 +99,9 @@ const guppies = [
     delivery: "Delivery available all over Tamilnadu",
     stock: true,
   },
+  
   {
-    id: 8,
-    name: "Chilli mosaic dumbo ear",
-    type: "dumboear",
-    price: "₹80",
-    img: "/images/chilli/chilli4.jpeg",
-    images: [
-      "/images/chilli/chilli1.jpeg",
-      "/images/chilli/chilli2.jpeg",
-      "/images/chilli/chilli3.jpeg",
-    ],
-    videos: ["/images/chilli/chilli4.mp4", "/images/chilli/chilli3.mp4"],
-    description:
-      "A bright red dragon guppy. Keep in 20-25°C water.price mentioned is for 1 pair guppy",
-    delivery: "Shipping available all over Tamilnadu",
-    stock: true,
-  },
-  {
-    id: 9,
+    id: 7,
     name: "Red Texudo Dumbo Ear",
     type: "Dumbo ear",
     price: "₹100",
@@ -150,7 +120,7 @@ const guppies = [
     stock: true,
   },
   {
-    id: 10,
+    id: 8,
     name: "AFR flower dorsal big body",
     type: "Albino",
     price: "₹200",
@@ -162,7 +132,7 @@ const guppies = [
     stock: false,
   },
   {
-    id: 11,
+    id: 9,
     name: "Topaz Blue",
     type: "Albino",
     price: "₹120",
@@ -186,26 +156,9 @@ const guppies = [
     requirements: "You need Minimum 2 pair to place order",
     stock: true,
   },
+ 
   {
-    id: 12,
-    name: "Red Lace",
-    type: "",
-    price: "₹90",
-    img: "/images/redlace/redl.jpeg",
-    images: [
-      "/images/redlace/redlace3.jpeg",
-      "/images/redlace/redlace2.jpeg",
-      "/images/redlace/redlace.jpeg",
-    ],
-    videos: ["/images/redlace/redlace.mp4", "/images/redlace/redlace2.mp4"],
-    description:
-      "A bright Red Lace with premium quality.You will get 2 male and 4 females in 2 pair pack.It is not that sensitive and best for begineers",
-    delivery: "Available all over kanniya kumari",
-    requirements: "You need Minimum 2 pair to place order",
-    stock: true,
-  },
-  {
-    id: 13,
+    id: 10,
     name: "Moscow Blue",
     type: "",
     price: "₹200",
@@ -221,7 +174,7 @@ const guppies = [
     stock: false,
   },
   {
-    id: 14,
+    id: 11,
     name: "Full Gold",
     type: "",
     price: "₹200",
@@ -236,24 +189,9 @@ const guppies = [
     delivery: "out of stock",
     stock: false,
   },
+  
   {
-    id: 15,
-    name: "Metal Red Rose",
-    type: "",
-    price: "₹200",
-    img: "/images/metal/metal.jpeg",
-    images: [
-      "/images/metal/metal.jpeg",
-      "/images/metal/metal.jpeg",
-      "/images/metal/metal.jpeg",
-    ],
-
-    description: "A bright red dragon guppy. Keep in 20-25°C water.",
-    delivery: "out of stock",
-    stock: false,
-  },
-  {
-    id: 16,
+    id: 12,
     name: "Albino red ear koi",
     type: "",
     price: "₹200",
@@ -268,7 +206,7 @@ const guppies = [
     stock: false,
   },
   {
-    id: 17,
+    id: 13,
     name: "platinum koi dumbo ear c fin ribbon",
     type: "",
     price: "₹200",
@@ -280,7 +218,7 @@ const guppies = [
     stock: false,
   },
   {
-    id: 18,
+    id: 14,
     name: "platinum blue dragon dumbo ear",
     type: "",
     price: "₹200",
@@ -292,7 +230,7 @@ const guppies = [
     stock: false,
   },
   {
-    id: 19,
+    id: 15,
     name: "Ballon koi",
     type: "",
     price: "₹200",
@@ -304,7 +242,7 @@ const guppies = [
     stock: false,
   },
   {
-    id: 20,
+    id: 16,
     name: "wild koi super short body",
     type: "",
     price: "₹200",
@@ -316,7 +254,7 @@ const guppies = [
     stock: false,
   },
   {
-    id: 21,
+    id: 17,
     name: "Blue panda c fin ribbon",
     type: "",
     price: "₹200",
@@ -328,7 +266,7 @@ const guppies = [
     stock: false,
   },
   {
-    id: 22,
+    id: 18,
     name: "Albino Full red purple ear",
     type: "",
     price: "₹200",
@@ -343,7 +281,7 @@ const guppies = [
     stock: false,
   },
   {
-    id: 23,
+    id: 19,
     name: "Platinum red tail full moon",
     type: "",
     price: "₹200",
