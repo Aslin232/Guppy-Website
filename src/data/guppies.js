@@ -3,17 +3,18 @@ const guppies = [
     id: 1,
     name: "Purple berry Dragon",
     type: "Dragon",
-    img: "/images/bluedragon/g.jpg",
+    img: "/images/bluedragon/purple.jpeg",
     images: [
-      "/images/bluedragon/bluedragon.jpg",
-      "/images/bluedragon/bluedragon2.jpg",
+      "/images/bluedragon/purple.jpeg",
+      "/images/bluedragon/purple2.jpeg",
+      "/images/bluedragon/purple3.jpeg",
     ],
     videos: ["/images/bluedragon/bluevideo.mp4", "/images/bluedragon/blud.mp4"],
     description:
       "Beautiful Blue Dragon ,Quality is good .The price mentioned is for 1 pair",
-    price: "₹120",
-    delivery: "Delivery available in kannyakumari",
-    stock: false,
+    price: "₹90",
+    delivery: "Delivery available all over Tamilnadu",
+    stock: true,
   },
   {
     id: 2,
@@ -115,9 +116,9 @@ const guppies = [
 
     description:
       "A bright red texudo guppy easy to maintain but sensitive to wateer tempratures.Price mentioned is for 1 pair",
-    delivery: "Delivery available in Kanniyakumari",
+    delivery: "Delivery available all over Tamilnadu",
     requirements: "only 1 pair available",
-    stock: true,
+    stock: false,
   },
   {
     id: 8,
@@ -152,7 +153,7 @@ const guppies = [
     ],
     description:
       "Topaz blue it shines blue when a light hit on it.Sensitive to water temperatures.",
-    delivery: "Delivery available in kanniyaKumari",
+    delivery: "Delivery available all over Tamilnadu",
     requirements: "You need Minimum 2 pair to place order",
     stock: true,
   },
@@ -161,7 +162,7 @@ const guppies = [
     id: 10,
     name: "Moscow Blue",
     type: "",
-    price: "₹200",
+    price: "₹100",
     img: "/images/moscow/moscow.jpeg",
     images: [
       "/images/moscow/moscow.jpeg",
@@ -169,9 +170,9 @@ const guppies = [
       "/images/moscow/moscow2.jpeg",
     ],
 
-    description: "A bright red dragon guppy. Keep in 20-25°C water.",
-    delivery: "out of stock",
-    stock: false,
+    description: "A bright moscow blue guppy. Keep in 20-25°C water.",
+    delivery: "All over Tamil nadu shipping possible",
+    stock: true,
   },
   {
     id: 11,
@@ -229,20 +230,9 @@ const guppies = [
     delivery: "out of stock",
     stock: false,
   },
+  
   {
     id: 15,
-    name: "Ballon koi",
-    type: "",
-    price: "₹200",
-    img: "/images/balkoi/bal.jpeg",
-    images: ["/images/balkoi/bal.jpeg", "/images/balkoi/bal.jpeg"],
-
-    description: "A bright red dragon guppy. Keep in 20-25°C water.",
-    delivery: "out of stock",
-    stock: false,
-  },
-  {
-    id: 16,
     name: "wild koi super short body",
     type: "",
     price: "₹200",
@@ -254,7 +244,7 @@ const guppies = [
     stock: false,
   },
   {
-    id: 17,
+    id: 16,
     name: "Blue panda c fin ribbon",
     type: "",
     price: "₹200",
@@ -266,7 +256,7 @@ const guppies = [
     stock: false,
   },
   {
-    id: 18,
+    id: 17,
     name: "Albino Full red purple ear",
     type: "",
     price: "₹200",
@@ -280,21 +270,7 @@ const guppies = [
     delivery: "out of stock",
     stock: false,
   },
-  {
-    id: 19,
-    name: "Platinum red tail full moon",
-    type: "",
-    price: "₹200",
-    img: "/images/pltfullm/pltfullm.jpeg",
-    images: [
-      "/images/pltfullm/pltfullm.jpeg",
-      "/images/pltfullm/pltfullm.jpeg",
-    ],
-
-    description: "A bright red dragon guppy. Keep in 20-25°C water.",
-    delivery: "out of stock",
-    stock: false,
-  },
+  
 ];
 
 export default guppies;
