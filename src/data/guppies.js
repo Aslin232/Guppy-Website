@@ -100,7 +100,7 @@ const guppies = [
     delivery: "Delivery available all over Tamilnadu",
     stock: true,
   },
-  
+
   {
     id: 7,
     name: "Red Texudo Dumbo Ear",
@@ -157,7 +157,7 @@ const guppies = [
     requirements: "You need Minimum 2 pair to place order",
     stock: true,
   },
- 
+
   {
     id: 10,
     name: "Moscow Blue",
@@ -190,7 +190,7 @@ const guppies = [
     delivery: "out of stock",
     stock: false,
   },
-  
+
   {
     id: 12,
     name: "Albino red ear koi",
@@ -230,7 +230,7 @@ const guppies = [
     delivery: "out of stock",
     stock: false,
   },
-  
+
   {
     id: 15,
     name: "wild koi super short body",
@@ -270,7 +270,18 @@ const guppies = [
     delivery: "out of stock",
     stock: false,
   },
-  
+  {
+    id: 18,
+    name: "Albino Full red Ribbon",
+    type: "",
+    price: "₹200",
+    img: "/images/afrribbon/ribbon.jpeg",
+    images: ["/images/afrribbon/ribbon.jpeg", "/images/afrribbon/ribbon.jpeg"],
+
+    description: "A bright red dragon guppy. Keep in 20-25°C water.",
+    delivery: "out of stock",
+    stock: false,
+  },
 ];
 
 export default guppies;
