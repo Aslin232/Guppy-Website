@@ -28,19 +28,17 @@ const guppies = [
   },
   {
     id: 3,
-    name: "Magenta Dumbo Ear Ribbon",
+    name: "AFR gull ear Ribbon",
     type: "",
-    price: "₹200",
-    img: "/images/magenta/magribbon.jpeg",
-    images: [
-      "/images/magenta/magribbon.jpeg",
-      "/images/magenta/magribbon.jpeg",
-    ],
+    price: "₹150",
+    img: "/images/afrribbon/afr2.jpeg",
+    images: ["/images/afrribbon/ribbon.jpeg", "/images/afrribbon/ribbon.jpeg"],
 
     description: "A bright red dragon guppy. Keep in 20-25°C water.",
     delivery: "out of stock",
     stock: false,
   },
+
   {
     id: 4,
     name: "platinum koi c fin gull earribbon",
@@ -99,20 +97,9 @@ const guppies = [
   
 
   
+
   {
     id: 8,
-    name: "AFR flower dorsal big body",
-    type: "Albino",
-    price: "₹100",
-    img: "/images/afr/afr1.jpeg",
-    images: ["/images/afr/afr1.jpeg"],
-
-    description: "A bright red dragon guppy. Keep in 20-25°C water.",
-    delivery: "out of stock",
-    stock: false,
-  },
-  {
-    id: 9,
     name: "Topaz Blue",
     type: "Albino",
     price: "₹120",
@@ -138,7 +125,7 @@ const guppies = [
   },
 
   {
-    id: 10,
+    id: 9,
     name: "Purple berry Dragon",
     type: "Dragon",
     img: "/images/bluedragon/purple.jpeg",
@@ -155,7 +142,7 @@ const guppies = [
     stock: true,
   },
   {
-    id: 11,
+    id: 10,
     name: "Full Gold",
     type: "",
     price: "₹80",
@@ -171,7 +158,7 @@ const guppies = [
     stock: false,
   },
   {
-    id: 12,
+    id: 11,
     name: "Platinum Redtail Dumbo Ear",
     type: "Dumbo ear",
     price: "₹100",
@@ -190,7 +177,7 @@ const guppies = [
 
   
   {
-    id: 13,
+    id: 12,
     name: "Platinum Koi Dumbo Ear",
     type: "Koi",
     price: "₹100",
@@ -214,19 +201,7 @@ const guppies = [
   
 
   {
-    id: 14,
-    name: "wild koi super short body",
-    type: "",
-    price: "₹130",
-    img: "/images/wild/wild.jpeg",
-    images: ["/images/wild/wild.jpeg", "/images/wild/wild.jpeg"],
-
-    description: "A bright red dragon guppy. Keep in 20-25°C water.",
-    delivery: "out of stock",
-    stock: false,
-  },
-  {
-    id: 15,
+    id: 13,
     name: "Blue panda c fin gull ear ribbon",
     type: "",
     price: "₹180",
@@ -238,7 +213,7 @@ const guppies = [
     stock: false,
   },
    {
-    id: 16,
+    id: 14,
     name: "Albino Platinum White",
     type: "Albino",
     price: "₹90",
@@ -255,7 +230,7 @@ const guppies = [
   },
   
   {
-    id: 17,
+    id: 15,
     name: "Albino Red Lace",
     type: "Dragon",
     price: "₹100",
@@ -267,7 +242,7 @@ const guppies = [
     stock: false,
   },
   {
-    id: 18,
+    id: 16,
     name: "Moscow blue",
     type: "Dragon",
     price: "₹80",
@@ -279,7 +254,7 @@ const guppies = [
     stock: false,
   },
   {
-    id: 19,
+    id: 17,
     name: "Moscow blue ribbon",
     type: "Dragon",
     price: "₹150",
@@ -291,7 +266,7 @@ const guppies = [
     stock: false,
   },
   {
-    id: 20,
+    id: 18,
     name: "Green black dragon",
     type: "Dragon",
     price: "₹300",
@@ -303,7 +278,7 @@ const guppies = [
     stock: false,
   },
   {
-    id: 21,
+    id: 19,
     name: "Platinum white dumbo ear",
     type: "Dragon",
     price: "₹120",
@@ -314,18 +289,62 @@ const guppies = [
     delivery: "out of stock",
     stock: false,
   },
+
   {
-    id: 22,
-    name: "Ivory green",
-    type: "Dragon",
+    id: 20,
+    name: "Red texudo dumbo ear",
+    type: "",
     price: "₹150",
-    img: "/images/ivory/ivory.jpeg",
-    images: ["/images/ivory/ivory.jpeg","/images/ivory/ivory.jpeg"],
+    img: "/images/redtex/redtex4.jpeg",
+    images: ["/images/redtex/reddumbo3.jpg","/images/redtex/reddumbo2.jpg"],
+    videos:["/images/redtex/reddumbo.mp4","images/redtex/reddumbo2.mp4"],
 
     description: "A bright red dragon guppy. Keep in 20-25°C water.",
     delivery: "out of stock",
     stock: false,
   },
+  {
+    id: 21,
+    name: "Jet Black",
+    type: "",
+    price: "₹80",
+    img: "/images/jetblack/jetb.jpeg",
+    images: ["/images/jetblack/jetb.jpeg","/images/jetblack/jetb.jpeg"],
+
+
+    description: "A bright red dragon guppy. Keep in 20-25°C water.",
+    delivery: "out of stock",
+    stock: false,
+  },
+  
+  {
+    id: 22,
+    name: "Bluish Black",
+    type: "",
+    price: "₹80",
+    img: "/images/bluish/bluish.jpeg",
+    images: ["/images/bluish/bluish.jpeg","/images/bluish/bluish.jpeg"],
+
+
+    description: "A bright red dragon guppy. Keep in 20-25°C water.",
+    delivery: "out of stock",
+    stock: false,
+  },
+  
+  {
+    id: 23,
+    name: "Platinum white crystal eye ballon molly ",
+    type: "",
+    price: "₹300",
+    img: "/images/pltmolly/pltmolly.jpeg",
+    images: ["/images/pltmolly/pltmolly.jpeg","/images/pltmolly/pltmolly.jpeg"],
+
+
+    description: "Nice ballon molly with crysatl eye",
+    delivery: "out of stock",
+    stock: false,
+  },
+  
 
   
 ];
